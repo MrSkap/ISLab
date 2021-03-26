@@ -18,6 +18,12 @@ namespace ISLab
 		public MainForm()
 		{
 			InitializeComponent();
+			this.FormClosing += MainForm_FormClosing;
+		}
+
+		private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
 		}
 
 		private void button1_Click(object sender, EventArgs e)

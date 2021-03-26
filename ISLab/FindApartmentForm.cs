@@ -17,6 +17,12 @@ namespace ISLab
 		{
 			InitializeComponent();
 			modelOfClientApartment.GeneralCharacteristics = new RealEstate();
+			this.FormClosing += FindApartmentForm_FormClosing;
+		}
+
+		private void FindApartmentForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
 		}
 
 		private void PriceComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -212,6 +218,26 @@ namespace ISLab
 		{
 			ResultForm resultForm = new ResultForm(modelOfClientApartment);
 			resultForm.Show();
+		}
+
+		private void NewOrOldcheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+			if (NewOrOldcheckBox.Checked)
+			{
+				modelOfClientApartment.NewOrOld = "Новостройка";
+			}
+			else
+			{
+				modelOfClientApartment.NewOrOld = "Вторичка";
+			}
+		}
+
+		private void GoBackButton_Click(object sender, EventArgs e)
+		{
+			MainForm mainForm = new MainForm();
+			mainForm.Show();
+			this.Hide();
+
 		}
 	}
 }

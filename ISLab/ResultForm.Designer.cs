@@ -33,7 +33,9 @@ namespace ISLab
 			this.richTextBox1 = new System.Windows.Forms.RichTextBox();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panel2 = new System.Windows.Forms.Panel();
+			this.BackButton = new System.Windows.Forms.Button();
 			this.flowLayoutPanel1.SuspendLayout();
+			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -51,16 +53,18 @@ namespace ISLab
 			// 
 			this.richTextBox1.Location = new System.Drawing.Point(3, 3);
 			this.richTextBox1.Name = "richTextBox1";
-			this.richTextBox1.Size = new System.Drawing.Size(997, 656);
+			this.richTextBox1.Size = new System.Drawing.Size(939, 694);
 			this.richTextBox1.TabIndex = 0;
 			this.richTextBox1.Text = "";
+			this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
 			// 
 			// panel1
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.panel1.Location = new System.Drawing.Point(999, -2);
+			this.panel1.Controls.Add(this.BackButton);
+			this.panel1.Location = new System.Drawing.Point(937, -2);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(91, 700);
+			this.panel1.Size = new System.Drawing.Size(153, 700);
 			this.panel1.TabIndex = 1;
 			// 
 			// panel2
@@ -72,6 +76,16 @@ namespace ISLab
 			this.panel2.Size = new System.Drawing.Size(1000, 700);
 			this.panel2.TabIndex = 2;
 			// 
+			// BackButton
+			// 
+			this.BackButton.Location = new System.Drawing.Point(10, 606);
+			this.BackButton.Name = "BackButton";
+			this.BackButton.Size = new System.Drawing.Size(132, 82);
+			this.BackButton.TabIndex = 0;
+			this.BackButton.Text = "Назад";
+			this.BackButton.UseVisualStyleBackColor = true;
+			this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+			// 
 			// ResultForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -82,6 +96,7 @@ namespace ISLab
 			this.Name = "ResultForm";
 			this.Text = "Подходящие варианты";
 			this.flowLayoutPanel1.ResumeLayout(false);
+			this.panel1.ResumeLayout(false);
 			this.panel2.ResumeLayout(false);
 			this.ResumeLayout(false);
 
@@ -93,5 +108,6 @@ namespace ISLab
 		private System.Windows.Forms.RichTextBox richTextBox1;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Button BackButton;
 	}
 }

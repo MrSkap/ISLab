@@ -17,6 +17,12 @@ namespace ISLab
 		{
 			InitializeComponent();
 			modelOfClientHouse.GeneralCharacteristics = new RealEstate();
+			this.FormClosing += FindHouseForm_FormClosing;
+		}
+
+		private void FindHouseForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
 		}
 
 		private void PriceComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,6 +150,13 @@ namespace ISLab
 			ResultForm resultForm = new ResultForm(modelOfClientHouse);
 			resultForm.Show();
 			
+		}
+
+		private void GoBackButton_Click(object sender, EventArgs e)
+		{
+			MainForm mainForm = new MainForm();
+			mainForm.Show();
+			this.Hide();
 		}
 	}
 }

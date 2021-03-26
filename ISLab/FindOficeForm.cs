@@ -17,6 +17,12 @@ namespace ISLab
 		{
 			InitializeComponent();
 			modelOfClientOffice.GeneralCharacteristics = new RealEstate();
+			this.FormClosing += FindOfficeForm_FormClosing;
+		}
+
+		private void FindOfficeForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -212,6 +218,17 @@ namespace ISLab
 			{
 				modelOfClientOffice.GeneralCharacteristics.Price = 100000000;
 			}
+		}
+
+		private void GoBackButton_Click_1(object sender, EventArgs e)
+		{
+			MainForm mainForm = new MainForm();
+			mainForm.Show();
+			this.Hide();
+		}
+		private void formClosing()
+		{
+			Application.Exit();
 		}
 	}
 }

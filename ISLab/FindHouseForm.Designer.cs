@@ -244,6 +244,7 @@ namespace ISLab
 			this.GoBackButton.TabIndex = 6;
 			this.GoBackButton.Text = "Назад";
 			this.GoBackButton.UseVisualStyleBackColor = true;
+			this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
 			// 
 			// FindHouseForm
 			// 

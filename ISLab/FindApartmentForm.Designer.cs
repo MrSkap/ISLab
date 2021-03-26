@@ -52,11 +52,13 @@ namespace ISLab
 			this.PriceComboBox = new System.Windows.Forms.ComboBox();
 			this.NextButton = new System.Windows.Forms.Button();
 			this.GoBackButton = new System.Windows.Forms.Button();
+			this.NewOrOldcheckBox = new System.Windows.Forms.CheckBox();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// panel1
 			// 
+			this.panel1.Controls.Add(this.NewOrOldcheckBox);
 			this.panel1.Controls.Add(this.ViewCheckBox);
 			this.panel1.Controls.Add(this.ComfortCheckBox);
 			this.panel1.Controls.Add(this.TransportСheckBox);
@@ -325,6 +327,18 @@ namespace ISLab
 			this.GoBackButton.TabIndex = 6;
 			this.GoBackButton.Text = "Назад";
 			this.GoBackButton.UseVisualStyleBackColor = true;
+			this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click);
+			// 
+			// NewOrOldcheckBox
+			// 
+			this.NewOrOldcheckBox.AutoSize = true;
+			this.NewOrOldcheckBox.Location = new System.Drawing.Point(315, 192);
+			this.NewOrOldcheckBox.Name = "NewOrOldcheckBox";
+			this.NewOrOldcheckBox.Size = new System.Drawing.Size(116, 21);
+			this.NewOrOldcheckBox.TabIndex = 26;
+			this.NewOrOldcheckBox.Text = "Новостройка";
+			this.NewOrOldcheckBox.UseVisualStyleBackColor = true;
+			this.NewOrOldcheckBox.CheckedChanged += new System.EventHandler(this.NewOrOldcheckBox_CheckedChanged);
 			// 
 			// FindApartmentForm
 			// 
@@ -367,5 +381,6 @@ namespace ISLab
 		private System.Windows.Forms.CheckBox ComfortCheckBox;
 		private System.Windows.Forms.CheckBox TransportСheckBox;
 		private System.Windows.Forms.CheckBox ParkingCheckBox;
+		private System.Windows.Forms.CheckBox NewOrOldcheckBox;
 	}
 }

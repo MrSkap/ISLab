@@ -32,6 +32,8 @@ namespace ISLab
 			this.components = new System.ComponentModel.Container();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label4 = new System.Windows.Forms.Label();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.CountOfWorkersComboBox = new System.Windows.Forms.ComboBox();
 			this.ParkingCheckBox = new System.Windows.Forms.CheckBox();
 			this.label3 = new System.Windows.Forms.Label();
@@ -49,8 +51,6 @@ namespace ISLab
 			this.PriceComboBox = new System.Windows.Forms.ComboBox();
 			this.NextButton = new System.Windows.Forms.Button();
 			this.GoBackButton = new System.Windows.Forms.Button();
-			this.label4 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -83,6 +83,28 @@ namespace ISLab
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(552, 623);
 			this.panel1.TabIndex = 4;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(280, 9);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(145, 17);
+			this.label4.TabIndex = 18;
+			this.label4.Text = "Месторасположение";
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Items.AddRange(new object[] {
+            "В центре",
+            "За городом",
+            "Не в центре"});
+			this.comboBox1.Location = new System.Drawing.Point(280, 29);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(225, 24);
+			this.comboBox1.TabIndex = 17;
+			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
 			// 
 			// CountOfWorkersComboBox
 			// 
@@ -273,28 +295,7 @@ namespace ISLab
 			this.GoBackButton.TabIndex = 3;
 			this.GoBackButton.Text = "Назад";
 			this.GoBackButton.UseVisualStyleBackColor = true;
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(280, 9);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(145, 17);
-			this.label4.TabIndex = 18;
-			this.label4.Text = "Месторасположение";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
-            "В центре",
-            "За городом",
-            "Не в центре"});
-			this.comboBox1.Location = new System.Drawing.Point(280, 29);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(225, 24);
-			this.comboBox1.TabIndex = 17;
-			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+			this.GoBackButton.Click += new System.EventHandler(this.GoBackButton_Click_1);
 			// 
 			// FindOfficeForm
 			// 

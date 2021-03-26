@@ -45,7 +45,7 @@ namespace ISLab
 					richTextBox1.Text += res.Years + " лет" + "\n";
 					richTextBox1.Text += res.CountOfRooms.ToString() + " комнат" + "\n";
 					richTextBox1.Text += res.Floor.ToString() + " этаж" + "\n";
-					richTextBox1.Text += res.Specifications + " кв. м." + "\n";
+					richTextBox1.Text += res.Specifications + " инфраструктура" + "\n";
 					richTextBox1.Text += res.Parking + " парковка" + "\n";
 					richTextBox1.Text += "...\n";
 				}
@@ -69,7 +69,7 @@ namespace ISLab
 					richTextBox1.Text += res.GeneralCharacteristics.Location + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Adress + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Square + " кв. м." + "\n";
-					richTextBox1.Text += res.Floors + " этажей" + "\n";
+					richTextBox1.Text += res.Floors + " - количество этажей" + "\n";
 					richTextBox1.Text += res.Comfort + " удобства" + "\n";
 					richTextBox1.Text += res.Comunication + " комуникации" + "\n";
 					richTextBox1.Text += res.TransportAccessibility + " - транспортная доступность" + "\n";
@@ -97,14 +97,15 @@ namespace ISLab
 					richTextBox1.Text += res.GeneralCharacteristics.Location + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Adress + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Square + " кв. м." + "\n";
+					richTextBox1.Text += res.NewOrOld + "\n";
 					richTextBox1.Text += res.Floor + " этаж" + "\n";
+					richTextBox1.Text += res.MaxFloor + " - всего этажей" + "\n";
 					richTextBox1.Text += res.Comfort + " удобства" + "\n";
-					richTextBox1.Text += res.CountOfRooms + " комнаты" + "\n";
-					richTextBox1.Text += res.TransportAccessibility + " - транспортная доступность" + "\n";
+					richTextBox1.Text += res.CountOfRooms + " количство комнат" + "\n";
+					richTextBox1.Text += res.TransportAccessibility + " транспортная доступность" + "\n";
 					richTextBox1.Text += res.TypeOfBuilding + "\n";
 					richTextBox1.Text += res.View + " красивый вид" + "\n";
 					richTextBox1.Text += res.Parking + " парковка" + "\n";
-					richTextBox1.Text += res.MaxFloor + " - всего этажей" + "\n";
 					richTextBox1.Text += "...\n";
 				}
 			}
@@ -128,7 +129,7 @@ namespace ISLab
 					richTextBox1.Text += res.GeneralCharacteristics.Location + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Adress + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Square + " кв. м." + "\n";
-					richTextBox1.Text += res.AdjacentTerritory + " Прилежащая территория" + "\n";
+					richTextBox1.Text += res.AdjacentTerritory + " км. - прилежащая территория" + "\n";
 					richTextBox1.Text += res.Ecology + " экология" + "\n";
 					richTextBox1.Text += res.TransportAccessibility + " - транспортная доступность" + "\n";
 					richTextBox1.Text += "...\n";
@@ -151,5 +152,15 @@ namespace ISLab
 
 		}
 
+		private void richTextBox1_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void BackButton_Click(object sender, EventArgs e)
+		{
+			richTextBox1.Text = "";
+			this.Hide();
+		}
 	}
 }

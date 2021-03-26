@@ -17,6 +17,12 @@ namespace ISLab
 		{
 			InitializeComponent();
 			modelOfClientSted.GeneralCharacteristics = new RealEstate();
+			this.FormClosing += FindSteadForm_FormClosing;
+		}
+
+		private void FindSteadForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			Application.Exit();
 		}
 
 		private void NextButton_Click(object sender, EventArgs e)
@@ -129,6 +135,13 @@ namespace ISLab
 			{
 				modelOfClientSted.AdjacentTerritory = 1000;
 			}
+		}
+
+		private void GoBackButton_Click(object sender, EventArgs e)
+		{
+			MainForm mainForm = new MainForm();
+			mainForm.Show();
+			this.Hide();
 		}
 	}
 }
