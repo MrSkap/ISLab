@@ -145,7 +145,7 @@ namespace ISLab
 			{
 				return true;
 			}
-			else if(clientModel.AdjacentTerritory >= 5 && listModel.AdjacentTerritory >= 5)
+			else if(clientModel.AdjacentTerritory > 5 && listModel.AdjacentTerritory >= 5)
 			{
 				return true;
 			}
