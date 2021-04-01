@@ -18,6 +18,21 @@ namespace ISLab
 			InitializeComponent();
 			modelOfClientApartment.GeneralCharacteristics = new RealEstate();
 			this.FormClosing += FindApartmentForm_FormClosing;
+
+			modelOfClientApartment.GeneralCharacteristics.Price = 100000000;
+			modelOfClientApartment.GeneralCharacteristics.Square = 10000;
+			modelOfClientApartment.GeneralCharacteristics.Location = "В городе";
+			modelOfClientApartment.CountOfRooms = 10;
+			modelOfClientApartment.Comfort = "Есть";
+			modelOfClientApartment.Floor = 2;
+			modelOfClientApartment.Infrastructure = "Неразвитая";
+			modelOfClientApartment.MaxFloor = 100;
+			modelOfClientApartment.NewOrOld = "Вторичка";
+			modelOfClientApartment.Parking = "Нет";
+			modelOfClientApartment.TransportAccessibility = "Неразвитая";
+			modelOfClientApartment.TypeOfBuilding = "Кирпичный";
+			modelOfClientApartment.View = "Нет";
+			modelOfClientApartment.Years = 100;
 		}
 
 		private void FindApartmentForm_FormClosing(object sender, FormClosingEventArgs e)

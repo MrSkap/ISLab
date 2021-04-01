@@ -18,6 +18,16 @@ namespace ISLab
 			InitializeComponent();
 			modelOfClientHouse.GeneralCharacteristics = new RealEstate();
 			this.FormClosing += FindHouseForm_FormClosing;
+
+			modelOfClientHouse.GeneralCharacteristics.Price = 1000000000;
+			modelOfClientHouse.GeneralCharacteristics.Square = 1000000;
+			modelOfClientHouse.Comunication = "Средняя";
+			modelOfClientHouse.Comfort = "Нет";
+			modelOfClientHouse.Floors = 1;
+			modelOfClientHouse.TransportAccessibility = "Неразвитая";
+			modelOfClientHouse.TypeOfHouse = "Бревенчатый";
+			modelOfClientHouse.GeneralCharacteristics.Location = "За городом";
+
 		}
 
 		private void FindHouseForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -27,15 +37,15 @@ namespace ISLab
 
 		private void PriceComboBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (PriceComboBox.SelectedItem.ToString() == "1000000<")
+			if (PriceComboBox.SelectedItem.ToString() == "< 1000000")
 			{
 				modelOfClientHouse.GeneralCharacteristics.Price = 1000000;
 			}
-			else if (PriceComboBox.SelectedItem.ToString() == "1000000-3000000")
+			else if (PriceComboBox.SelectedItem.ToString() == "1000000 - 3000000")
 			{
 				modelOfClientHouse.GeneralCharacteristics.Price = 3000000;
 			}
-			else if (PriceComboBox.SelectedItem.ToString().Equals("3000000-6000000"))
+			else if (PriceComboBox.SelectedItem.ToString().Equals("3000000 - 6000000"))
 			{
 				modelOfClientHouse.GeneralCharacteristics.Price = 6000000;
 			}

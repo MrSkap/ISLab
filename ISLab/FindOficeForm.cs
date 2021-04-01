@@ -18,6 +18,14 @@ namespace ISLab
 			InitializeComponent();
 			modelOfClientOffice.GeneralCharacteristics = new RealEstate();
 			this.FormClosing += FindOfficeForm_FormClosing;
+			modelOfClientOffice.CountOfRooms = 1;
+			modelOfClientOffice.CountOfWorkers = 5;
+			modelOfClientOffice.Floor = 1;
+			modelOfClientOffice.Parking = "Нет";
+			modelOfClientOffice.Specifications = "Нет";
+			modelOfClientOffice.Years = 100;
+			modelOfClientOffice.GeneralCharacteristics.Price = 100000000;
+			modelOfClientOffice.GeneralCharacteristics.Square = 100000;
 		}
 
 		private void FindOfficeForm_FormClosing(object sender, FormClosingEventArgs e)

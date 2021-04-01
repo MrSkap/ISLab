@@ -18,6 +18,13 @@ namespace ISLab
 			InitializeComponent();
 			modelOfClientSted.GeneralCharacteristics = new RealEstate();
 			this.FormClosing += FindSteadForm_FormClosing;
+
+			modelOfClientSted.GeneralCharacteristics.Price = 100000000;
+			modelOfClientSted.GeneralCharacteristics.Square = 1000000;
+			modelOfClientSted.GeneralCharacteristics.Location = "В области";
+			modelOfClientSted.AdjacentTerritory = 5;
+			modelOfClientSted.Ecology = "Средняя";
+			modelOfClientSted.TransportAccessibility = "Неразвитая";
 		}
 
 		private void FindSteadForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -36,11 +43,11 @@ namespace ISLab
 			{
 				modelOfClientSted.GeneralCharacteristics.Price = 1000000;
 			}
-			else if (PriceComboBox.SelectedItem.ToString() == "1000000-2000000")
+			else if (PriceComboBox.SelectedItem.ToString() == "1000000 - 2000000")
 			{
 				modelOfClientSted.GeneralCharacteristics.Price = 2000000;
 			}
-			else if (PriceComboBox.SelectedItem.ToString() == "2000000-3000000")
+			else if (PriceComboBox.SelectedItem.ToString() == "2000000 - 3000000")
 			{
 				modelOfClientSted.GeneralCharacteristics.Price = 3000000;
 			}

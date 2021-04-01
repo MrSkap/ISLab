@@ -98,7 +98,6 @@ namespace ISLab
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             "В центре",
-            "За городом",
             "Не в центре"});
 			this.comboBox1.Location = new System.Drawing.Point(280, 29);
 			this.comboBox1.Name = "comboBox1";
@@ -265,10 +264,10 @@ namespace ISLab
 			// 
 			this.PriceComboBox.FormattingEnabled = true;
 			this.PriceComboBox.Items.AddRange(new object[] {
-            "1000000<",
-            "1000000-3000000",
-            "3000000-6000000",
-            ">6000000"});
+            "< 1000000",
+            "1000000 - 3000000",
+            "3000000 - 6000000",
+            "> 6000000"});
 			this.PriceComboBox.Location = new System.Drawing.Point(3, 29);
 			this.PriceComboBox.Name = "PriceComboBox";
 			this.PriceComboBox.Size = new System.Drawing.Size(225, 24);

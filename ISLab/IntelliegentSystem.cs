@@ -119,6 +119,7 @@ namespace ISLab
 				clientModel.Parking == listModel.Parking &&
 				clientModel.View == listModel.View &&
 				clientModel.Years >= listModel.Years &&
+				clientModel.NewOrOld == listModel.NewOrOld &&
 				(clientModel.Floor == listModel.Floor || (clientModel.Floor == 2 && (listModel.Floor>=2 && listModel.Floor<listModel.MaxFloor)) ||(clientModel.Floor == 3 && listModel.Floor == listModel.MaxFloor)))
 			{
 				return true;

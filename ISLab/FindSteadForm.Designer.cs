@@ -163,10 +163,10 @@ namespace ISLab
 			// 
 			this.PriceComboBox.FormattingEnabled = true;
 			this.PriceComboBox.Items.AddRange(new object[] {
-            "1000000<",
-            "1000000-2000000",
-            "2000000-3000000",
-            ">3000000"});
+            "< 1000000",
+            "1000000 - 2000000",
+            "2000000 - 3000000",
+            "> 3000000"});
 			this.PriceComboBox.Location = new System.Drawing.Point(3, 29);
 			this.PriceComboBox.Name = "PriceComboBox";
 			this.PriceComboBox.Size = new System.Drawing.Size(225, 24);
