@@ -78,7 +78,7 @@ namespace ISLab
 				{
 					return true;
 				}
-				if (clientModel.Floor == 2 && clientModel.Floor == listModel.Floor && CheckOfficeRooms(clientModel, listModel))
+				if (clientModel.Floor == 2 && listModel.Floor >= 2 && CheckOfficeRooms(clientModel, listModel))
 				{
 					return true;
 				}
@@ -87,7 +87,7 @@ namespace ISLab
 					return true;
 				}
 			}
-			return true;
+			return false;
 		}
 		private static bool CheckOfficeRooms(Office clientModel, Office listModel)
 		{

@@ -149,9 +149,9 @@ namespace ISLab
 			// 
 			this.SizeComboBox.FormattingEnabled = true;
 			this.SizeComboBox.Items.AddRange(new object[] {
-            "<80 кв. м.",
-            "80 - 150 кв. м.",
-            ">150 кв. м."});
+            "< 80",
+            "80 - 150",
+            ">150"});
 			this.SizeComboBox.Location = new System.Drawing.Point(3, 376);
 			this.SizeComboBox.Name = "SizeComboBox";
 			this.SizeComboBox.Size = new System.Drawing.Size(219, 24);

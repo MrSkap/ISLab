@@ -96,11 +96,11 @@ namespace ISLab
 
 		private void SizeComboBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (SizeComboBox.SelectedItem.ToString() == "<80 кв.м.")
+			if (SizeComboBox.SelectedItem.ToString() == "< 80")
 			{
 				modelOfClientHouse.GeneralCharacteristics.Square = 0;
 			}
-			else if (SizeComboBox.SelectedItem.ToString() == "80 - 150 кв. м.")
+			else if (SizeComboBox.SelectedItem.ToString() == "80 - 150")
 			{
 				modelOfClientHouse.GeneralCharacteristics.Square = 80;
 			}

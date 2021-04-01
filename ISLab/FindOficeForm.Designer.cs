@@ -144,8 +144,7 @@ namespace ISLab
 			this.FloorComboBox.FormattingEnabled = true;
 			this.FloorComboBox.Items.AddRange(new object[] {
             "1",
-            "1-2",
-            ">2"});
+            "> 1"});
 			this.FloorComboBox.Location = new System.Drawing.Point(9, 560);
 			this.FloorComboBox.Name = "FloorComboBox";
 			this.FloorComboBox.Size = new System.Drawing.Size(219, 24);
@@ -165,10 +164,10 @@ namespace ISLab
 			// 
 			this.CountOfRoomsComboBox.FormattingEnabled = true;
 			this.CountOfRoomsComboBox.Items.AddRange(new object[] {
-            "1-2",
-            "2-5",
-            "5-10",
-            ">10"});
+            "1 - 2",
+            "2 - 5",
+            "5 - 10",
+            "> 10"});
 			this.CountOfRoomsComboBox.Location = new System.Drawing.Point(9, 493);
 			this.CountOfRoomsComboBox.Name = "CountOfRoomsComboBox";
 			this.CountOfRoomsComboBox.Size = new System.Drawing.Size(219, 24);

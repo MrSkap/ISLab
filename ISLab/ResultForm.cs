@@ -128,7 +128,7 @@ namespace ISLab
 					richTextBox1.Text += res.GeneralCharacteristics.Price.ToString() + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Location + "\n";
 					richTextBox1.Text += res.GeneralCharacteristics.Adress + "\n";
-					richTextBox1.Text += res.GeneralCharacteristics.Square + " кв. м." + "\n";
+					richTextBox1.Text += res.GeneralCharacteristics.Square + " га." + "\n";
 					richTextBox1.Text += res.AdjacentTerritory + " км. - прилежащая территория" + "\n";
 					richTextBox1.Text += res.Ecology + " экология" + "\n";
 					richTextBox1.Text += res.TransportAccessibility + " - транспортная доступность" + "\n";

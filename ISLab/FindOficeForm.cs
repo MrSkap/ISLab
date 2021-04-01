@@ -59,7 +59,7 @@ namespace ISLab
 			}
 			else
 			{
-				modelOfClientOffice.GeneralCharacteristics.Price = 100000000;
+				modelOfClientOffice.GeneralCharacteristics.Price = 1000000000;
 			}
 		}
 
@@ -130,15 +130,15 @@ namespace ISLab
 
 		private void CountOfRoomsComboBox_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (YearsComboBox.SelectedItem.ToString() == "1 - 2")
+			if (CountOfRoomsComboBox.SelectedItem.ToString() == "1 - 2")
 			{
 				modelOfClientOffice.CountOfRooms = 1;
 			}
-			else if (YearsComboBox.SelectedItem.ToString() == "2 - 5")
+			else if (CountOfRoomsComboBox.SelectedItem.ToString() == "2 - 5")
 			{
 				modelOfClientOffice.CountOfRooms = 2;
 			}
-			else if (YearsComboBox.SelectedItem.ToString() == "5 - 10")
+			else if (CountOfRoomsComboBox.SelectedItem.ToString() == "5 - 10")
 			{
 				modelOfClientOffice.CountOfRooms = 5;
 			}
@@ -154,13 +154,9 @@ namespace ISLab
 			{
 				modelOfClientOffice.Floor = 1;
 			}
-			else if (FloorComboBox.SelectedItem.ToString() == "1 - 2")
-			{
-				modelOfClientOffice.Floor = 2;
-			}
 			else
 			{
-				modelOfClientOffice.Floor = 3;
+				modelOfClientOffice.Floor = 2;
 			}
 
 		}
